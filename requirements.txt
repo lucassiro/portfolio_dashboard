@@ -1,1 +1,5 @@
-streamlit
+streamlit==1.23.1
+st-pages==0.4.1
+# tensorflow
+# scikit-learn
+opencv-python==4.7.0.72
