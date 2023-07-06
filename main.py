@@ -1,17 +1,9 @@
-import streamlit as st
-import streamlit.components.v1 as components
+from st_pages import Page, show_pages
 
-st.title("Welcome")
-
-# st.sidebar.title("Pages")
-st.title("Bem vindo ao meu portfolio")
-
-st.markdown("No menu lateral ao lado, você pode acessar alguns dos meu projetos pessoais")
-
-st.subheader("Quem sou eu?")
-st.markdown(
-    """Me chamo Lucas Siqueira Rodrigue, tenho 29 anos e moro em Brasília-DF, etcetcetc
-    """
+show_pages(
+    [
+        Page("pages/home/main.py", "Home", ":house:"),
+        Page("pages/image_classification/main.py", "Computer Vision", ":house:"),
+        # Page("pages/finance/main.py", "Finance", ":house:")
+    ]
 )
-
-
